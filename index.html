@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xeno Projects</title>
+  <style>
+    :root {
+      --bg-color: #000000;
+      --card-bg: #0d0d0d;
+      --card-border: #1a1a1a;
+      --accent-color: #ffffff;
+      --btn-bg: #ffffff;
+      --btn-text: #000000;
+      --text-color: #ffffff;
+      --text-muted: #888888;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--text-color);
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border: 1px solid var(--card-border);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: #333333;
+      transform: translateY(-2px);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card-icon {
+      font-size: 1.8rem;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-color);
+    }
+
+    .card-description {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .instructions {
+      background-color: #141414;
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 4px;
+      border: 1px solid #222222;
+    }
+
+    .instructions-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .instructions ol {
+      padding-left: 18px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .instructions li {
+      margin-bottom: 4px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-align: center;
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin-top: 5px;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Xeno Projects</h1>
+    <p class="subtitle">Единый портал сервисов и экосистемы Xeno</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Карточка XenoVPN -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-icon">🛡️</span>
+        <h2 class="card-title">XenoVPN</h2>
+      </div>
+      <p class="card-description">
+        Быстрый, защищенный и приватный доступ к интернету.
+      </p>
+
+      <div class="instructions">
+        <div class="instructions-title">Как подключить:</div>
+        <ol>
+          <li>Скачайте приложение <b>Happ Proxy</b> на Android или iPhone.</li>
+          <li>Перейдите по кнопке ниже и скопируйте вашу ссылку подписки.</li>
+          <li>Вставьте скопированную ссылку в приложение Happ Proxy.</li>
+        </ol>
+      </div>
+
+      <a href="https://xenovpn.jo3.org" class="btn" target="_blank">Перейти на XenoVPN</a>
+    </div>
+
+    <!-- Карточка XenoBuy -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-icon">🛒</span>
+        <h2 class="card-title">XenoBuy</h2>
+      </div>
+      <p class="card-description">
+        Онлайн-магазин цифровых товаров и сервисов экосистемы Xeno. Ссылка ведёт в Telegram.
+      </p>
+      <a href="https://t.me/xenobuy_bot" class="btn" target="_blank">Открыть в Telegram</a>
+    </div>
+
+    <!-- Карточка основного сайта -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-icon">🌐</span>
+        <h2 class="card-title">XenoProjects 2026</h2>
+      </div>
+      <p class="card-description">
+        Главная платформа и разработка новых решений Xeno.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    Xeno 2026
+  </footer>
+
+</body>
+</html>
